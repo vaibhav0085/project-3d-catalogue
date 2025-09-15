@@ -75,7 +75,7 @@ Homepage Carousel – Displays product images with details.
 
 Shopping Cart Page – Shows all added items with total.
 
-Checkout Modal – Collects delivery information.
+Checkout Modal – Collects(PR-0X34S) delivery information.
 
 Order Confirmation – Displays success message.
 
