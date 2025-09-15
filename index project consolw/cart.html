@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - MINOR PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>MINOR PROJECT</h1>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="menu-btn"><i class='bx bx-home'></i></a></li>
+                <li><a href="#" class="cart-btn active"><i class='bx bx-cart'></i><span class="cart-count">0</span></a></li>
+                <li><a href="#" class="login-btn"><i class='bx bx-log-in'></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="cart-page">
+        <div class="cart-container">
+            <h2 class="cart-title">Your Shopping Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-summary">
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span class="subtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Tax (10%):</span>
+                    <span class="tax">$0.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span class="total-amount">$0.00</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+        <!-- Checkout Modal -->
+        <div id="checkout-modal" class="modal" style="display:none;">
+            <h2>Delivery Information</h2>
+            <form id="deliveryForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="address">Full Address:</label>
+                <textarea id="address" rows="3" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <span class="close-modal" id="close-modal">&times;</span>
+        </div>
+        <!-- Order Confirmation Modal -->
+        <div id="order-confirmation-modal" class="modal" style="display:none;">
+            <h2>Thank You!</h2>
+            <p>Your order has been placed successfully.</p>
+            <button id="continue-shopping-btn">Continue Shopping</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html> 
